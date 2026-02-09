@@ -6,6 +6,13 @@ __pycache__/
 # C extensions
 *.so
 *.parquet
+*.csv.gz
+*.gz
+
+# 03-google-bigquery data files
+03-google-bigquery/*.parquet
+03-google-bigquery/*.csv.gz
+03-google-bigquery/*.gz
 
 
 # Distribution / packaging
