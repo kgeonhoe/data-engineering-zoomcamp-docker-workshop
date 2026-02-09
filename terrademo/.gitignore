@@ -6,3 +6,6 @@
 *.tfstate
 *.tfstate.backup
 *.tfvars
+
+
+.03-google-bigquery/
