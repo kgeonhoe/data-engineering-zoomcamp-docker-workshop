@@ -1,0 +1,18 @@
+# Zoomcamp template: pipeline.yml
+# NYC Taxi ELT Pipeline Configuration
+
+name: nyc_taxi_pipeline
+
+schedule: monthly
+
+start_date: "2022-01-01"
+
+default_connections:
+  duckdb: duckdb-default
+
+variables:
+  taxi_types:
+    type: array
+    items:
+      type: string
+    default: [ "yellow", "green" ]

@@ -1,0 +1,24 @@
+# Seed Asset: Load a local CSV file as a lookup table
+#
+# Docs: https://getbruin.com/docs/bruin/assets/seed
+
+name: ingestion.payment_lookup
+
+type: duckdb.seed
+
+parameters:
+  path: payment_lookup.csv
+
+columns:
+- name: payment_type_id
+  type: integer
+  description: "Unique identifier for payment type"
+  primary_key: true
+  checks:
+  - name: not_null
+  - name: unique
+- name: payment_type_name
+  type: string
+  description: "Human-readable name of payment type"
+  checks:
+  - name: not_null
