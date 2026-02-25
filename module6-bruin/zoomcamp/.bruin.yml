@@ -1,0 +1,9 @@
+# Bruin environment and connection configuration
+# Docs: https://getbruin.com/docs/bruin/getting-started/introduction
+
+environments:
+  default:
+    connections:
+      duckdb:
+      - name: "duckdb-default"
+        path: "duckdb.db"
