@@ -1,0 +1,13 @@
+version: 2
+models:
+- name: dim_vendor
+  description: "Dimension table for taxi ride vendors"
+  columns:
+  - name: vendorid
+    description: "A code indicating the provider associated with the trip record. 1 = Creative Mobile Technologies, LLC 2 = VeriFone Inc. 4 = 'Unknown'"
+    data_type: integer
+    meta:
+      pii: false
+      ownership: data_team
+      importance: high
+      formatting: none

@@ -1,0 +1,40 @@
+version: 2
+
+sources:
+- name: taxi_rides_ny
+  description: "Raw data sources for taxi rides in New York"
+  database: taxi_rides_ny
+  schema: prod
+  tables:
+  - name: yellow_tripdata
+    description: "Raw data for yellow trip rides"
+    columns:
+    - name: vendorid
+      description: |+
+        A code indicating the provider associated with the trip record.     
+          1 = Creative Mobile Technologies, LLC
+          2 = VeriFone Inc.
+          4 = 'Unknown'
+          
+      data_type: integer
+      meta:
+        pii: false
+        ownership: data_team
+        importance: high
+        formatting: none
+
+  - name: green_tripdata
+    description: "Raw data for green trip rides"
+
+## for bigquery
+# version: 2
+# sources:
+# - name: raw_data
+#   description: "Raw data sources for taxi rides in New York"
+#   database: nimble-courier-485614-g9 # Project ID
+#   schema: nytaxi #dataset Name
+#   tables:
+#   - name: yellow_tripdata
+#     description: "Raw data for yellow trip rides"
+#   - name: green_tripdata
+#     description: "Raw data for green trip rides"
