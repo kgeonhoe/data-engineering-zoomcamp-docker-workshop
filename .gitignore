@@ -14,6 +14,15 @@ __pycache__/
 03-google-bigquery/*.csv.gz
 03-google-bigquery/*.gz
 
+# 06-batch-spark — Spark 생성 데이터 (대용량, 재생성 가능)
+06-batch-spark/data/
+06-batch-spark/work/data/
+06-batch-spark/work/.ipynb_checkpoints/
+
+# Spark/Hadoop 메타 파일
+_SUCCESS
+*.crc
+
 
 # Distribution / packaging
 .Python
